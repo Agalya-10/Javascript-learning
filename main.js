@@ -1,3 +1,4 @@
+// external
 function helloDate() {
     document.getElementById('dateDisplay').innerHTML = new Date();
 }
@@ -23,7 +24,7 @@ console.log(total)
   var a=20;
   a++;
   console.log(a);
-   
+
   var a=20;
   b=a++;
   console.log(b);
@@ -86,6 +87,52 @@ function area(l,b){
     console.log(l+b);
 }
 area(55,75)
+// return function
+function myDept()
+{
+       return"computer science"
+}
+var c=myDept()
+console.log(c)
+
+function fruit(apple,orange)
+
+{
+    return apple+orange;
+}
+var totalValue=fruit(50,60);
+console.log(totalValue);
+
+// if else
+
+if(true){
+    console.log("its true")
+}
+else{
+    console.log("its false")
+}
+
+var rain=false
+if (rain)
+{
+    console.log("take an umbrella")
+}
+else{
+    console.log("enjoy the sunshine")
+    }
+    
+    var homework=true
+    if(homework)
+    {
+        console.log("great job")
+    }
+    else
+    {
+        console.log("finish your homework before playing")
+    }
+
+
+
 
 
 
