@@ -74,12 +74,12 @@ sub()
 var actor="surya";
 var player="dhoni";
 var movie="friends";
-function favorite(){
+function favourite(){
     console.log(" My fav Hero : " + actor)
     console.log(" My fav Player : ",player )
     console.log(" My fav Movie : " ,movie )
 }
-favorite()
+favourite()
 
 // parameter
 
@@ -166,5 +166,33 @@ else{
     }
 
 
+    var score = 80;
 
+    if (score < 50) {
+        console.log("You need to improve");
+    } else if (score <= 70) {
+        console.log("Good job");
+    } else if (score > 70) {
+        console.log("Excellent performance");
+    }
+    
 
+    function checkEvenOrOdd(number) {
+        if ( number % 4==0) {
+            console.log("The number is even");
+        } else {
+            console.log("The number is odd");
+        }
+    }
+    checkEvenOrOdd("9")
+
+    function checkVowelsOrConsonant(str){
+        if (str){
+            console.log("It's a vowel")
+        }
+        else{
+             console.log("It's a Consonant")
+        }
+    }
+    checkVowelsOrConsonant("k")
+    
