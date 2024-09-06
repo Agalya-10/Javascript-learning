@@ -165,6 +165,14 @@ else{
         console.log("admire the colorfull leaves")
     }
 
+    var result="50"
+if(result60){
+    console.log("pass")
+}
+else{
+    console.log("fail")
+}
+
 
     var score = 80;
 
@@ -186,13 +194,44 @@ else{
     }
     checkEvenOrOdd("9")
 
-    function checkVowelsOrConsonant(str){
-        if (str){
+    function checkVowelsOrConsonant(char){ 
+        if (char === 'a'|| char === "e" || char === 'i' || char === "o" || char === 'u' ){
             console.log("It's a vowel")
         }
         else{
              console.log("It's a Consonant")
         }
     }
-    checkVowelsOrConsonant("k")
     
+checkVowelsOrConsonant("m")
+
+// for loop
+for(count=1;count<=20;count=count+1)
+    {
+        console.log("agalya")
+    }
+
+    for(count=1;count<=10;count=count+3)
+        {
+            console.log(count)
+        }
+
+        // reverse
+
+        for(let count=15;count >= 1;count--)
+            {
+                console.log(count)
+            }
+
+            // tables
+            for(let count=1;count <= 10;count++)
+                {
+                    console.log(count+"x2="+(count*2))
+                }
+                
+                for( let i=10;i<=20;i++)
+                    {
+                    if(i%3===0){
+                        console.log(i)
+                    }
+                    }
