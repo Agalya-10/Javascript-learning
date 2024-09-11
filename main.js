@@ -137,11 +137,11 @@ else{
     {
         console.log("get ready")
     }
-    if (color=="red")
+    else if (color=="red")
     {
        console.log("stop") 
     }
-    if (color=="green")
+    else if (color=="green")
     {
        console.log("go") 
     }
@@ -152,21 +152,21 @@ else{
     {
         console.log("bundle up and stay warm")
     }
-    if(season=="spring")
+    else if(season=="spring")
     {
         console.log("enjoy the blooming flowers")
     }
-    if(season=="summer")
+    else if(season=="summer")
     {
         console.log("have fun in the sun")
     }
-    if(season=="autumn")
+    else if(season=="autumn")
     {
         console.log("admire the colorfull leaves")
     }
 
     var result="50"
-if(result60){
+if(result>60){
     console.log("pass")
 }
 else{
@@ -239,3 +239,16 @@ for(count=1;count<=20;count=count+1)
                         if(i%2==0){
                             console.log(i)
                         }
+
+              // reversed name 
+              function reversedName(str)
+              {
+                var reversedName=""
+                for(let i=str.length-1;i>=0;i--){
+                reversedName += str[i]
+                }
+               return reversedName;
+                }
+                 var name="i am bavya"
+                console.log(reversedName(name))
+    
