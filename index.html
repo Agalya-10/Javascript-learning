@@ -70,8 +70,58 @@
 <p id="name">Hii i'm Bavya</p>
 <button onclick="document.getElementById('name').innerHTML = 'Hii i am Agalya'">click me</button>
 
-<p id="color">background color</p>
-<button onclick="document.getElementById('color').innerHTML = 'Ebrain technology'">click here</button>
+<button onclick="changeBackgroundColor()">click here</button>
+<script>
+    function changeBackgroundColor(){
+       var element= document.getElementById('name');
+       element.style.backgroundColor = 'red';  
+       element.style.color = 'white' 
+  }
+</script>
+
+<!-- window alert -->
+<h1>Fruits</h1>
+<p>Apple,orange,banana</p>
+
+<script>
+    alert(20+40+60);
+</script>
+ 
+<!-- window print -->
+
+<P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae optio, nisi debitis deleniti suscipit saepe exercitationem ea soluta dolorum quisquam. Sint voluptate, explicabo ea dolorem sit error odio sed soluta.</P>
+
+<button onclick="window.print()">print this page</button>
+<!-- statements -->
+ <p id="stmt"></p>
+ <script>
+    var x,y,z;
+    x=20;
+    y=10;
+    z=x+y;
+    document.getElementById('stmt').innerHTML="The value z is =" +z+ "."
+ </script>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 <script src="main.js"></script>
