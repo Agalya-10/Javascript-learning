@@ -117,12 +117,40 @@
 
 </script>
 
+<h1 id="task" ></h1>
+<button onclick="clickButton()"onmouseover="mouseOver()" onmouseout="mouseOut()" >CLICK HERE</button>
+<script>
+    function clickButton(){
+    document.getElementById('task').innerHTML = "AGALYA"
+}
+    function mouseOver(){
+        document.getElementById('task').style.backgroundColor= "red";
+    }
+    function mouseOut(){
+        document.getElementById('task').style.backgroundColor = "white";
+    }    
+</script>
+  
+<!-- array  -->
+<h1 id="arraymethod">Array Method</h1>
+<script>
+const name = ["agalya","ruban","amsavarthani","bavya"]
+document.getElementById('arraymethod').innerHTML= name[1];
+</script>
 
-
-
-
-
-
+<!-- objects -->
+ <p id="objectmethod">Object  method</p>
+ <script>
+  const student = {
+    firstname : "Agalya",
+    lastname:"Muruganantham",
+    age:"20",
+    DOB:"10/05/2004",
+    city:"Thanjavur"
+    }
+    document.getElementById('objectmethod').innerHTML =  student.firstname + " "+ " is " + student.age +  " years old. ";
+ </script>
+ 
 
 
 
