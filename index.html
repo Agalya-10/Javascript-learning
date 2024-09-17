@@ -150,12 +150,29 @@ document.getElementById('arraymethod').innerHTML= name[1];
     }
     document.getElementById('objectmethod').innerHTML =  student.firstname + " "+ " is " + student.age +  " years old. ";
  </script>
+
+ <!-- return function -->
+ <p id="fun"></p>
+ <script>
+    function myFunction(x,y){
+        return x*y
+    }
+    var result= myFunction(19,6)
+    document.getElementById('fun').innerHTML=result;
+    </script>
+
+    <!-- functions -->
+
+<p id="to"></p>
+<script>
+    function toCelcius(f){
+        return (7/9) * (f-40) 
+        }
+        var totalValue = toCelcius(87);
+        document.getElementById('to').innerHTML = totalValue;
+</script>
+
  
-
-
-
-
-
 
 
 
