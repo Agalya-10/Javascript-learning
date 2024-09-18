@@ -61,8 +61,8 @@
     {
         var box1value = Number(box1.value)
         var box2value = Number(box2.value)
-        const total= box1value+box2value
-        result.textContent=Total
+        let total= box1value+box2value
+        result.textContent=Total;
     }
 </script>
 
@@ -134,7 +134,7 @@
 <!-- array  -->
 <h1 id="arraymethod">Array Method</h1>
 <script>
-const name = ["agalya","ruban","amsavarthani","bavya"]
+const name = ["agalya","ruban","amsavarthani","bavya"];
 document.getElementById('arraymethod').innerHTML= name[1];
 </script>
 
@@ -150,6 +150,32 @@ document.getElementById('arraymethod').innerHTML= name[1];
     }
     document.getElementById('objectmethod').innerHTML =  student.firstname + " "+ " is " + student.age +  " years old. ";
  </script>
+
+ <p id="delete"></p> 
+ <script>
+    let person = {
+        name : "Agalya",
+        age : "20",
+        city : "thanjavur",
+    }
+    delete person.age;
+
+    document.getElementById('delete').innerHTML = person.name + " is " + person.age + " years old."
+ </script>
+
+<p id="delete1"></p> 
+ <script>
+    let person1 = {
+        firstName : "Agalya",
+        lastName: "Muruganantham",
+        age : "20",
+        city : "thanjavur",
+        fullName : function(){
+            return person1.firstName + " " + person1.lastName
+        }
+    };
+        document.getElementById('delete1').innerHTML = person1.fullName();
+</script>
 
  <!-- return function -->
  <p id="fun"></p>
@@ -171,6 +197,17 @@ document.getElementById('arraymethod').innerHTML= name[1];
         var totalValue = toCelcius(87);
         document.getElementById('to').innerHTML = totalValue;
 </script>
+<!-- operator -->
+ 
+<P id="operator"></p>
+    <script>
+        text="Good morning"
+        text+= " " +"Have a nice day"
+        document.getElementById('operator').innerHTML = text;
+    </script>
+
+    
+
 
  
 
