@@ -205,10 +205,46 @@ document.getElementById('arraymethod').innerHTML= name[1];
         text+= " " +"Have a nice day"
         document.getElementById('operator').innerHTML = text;
     </script>
+<!-- string -->
 
-    
+<p id="string"></p>
+<script>
+    var letter = "abcdefghijklmnopqrstuvwxyz"
+    document.getElementById('string').innerHTML = letter.length;
+</script>
+     
+<p id="string1"></p>
+<script>
+    document.getElementById('string1').innerHTML ="Agalya"+"<br>" +"Sowmiya"+"<br>"+"Nilavaendhan";
+</script>
+<!-- typeof -->
+<p id="type">type</p>
+<script>
+    var a = "agalya";
+    var b = new String ("Muruganatham");
+    document.getElementById('type').innerHTML = typeof a + "<br>" + typeof b ;
+</script>
 
+<h4 id="type1">string</h4>
+<script>
+    var a = "agalya";
+    var b = new String ("agalya");
+    document.getElementById('type1').innerHTML = (a==b);
+    </script>
 
+<h4 id="type2"> string method</h4>
+<script>
+    var a = "Agalya Muruganantham";
+    document.getElementById('type2').innerHTML = a.charAt(4);
+    </script>
+
+    <!-- string method -->
+<P id="stringmethod"></P>
+<script>
+    var flowers ="Rose,jasmine,lilly";
+    var type3 = text.slice(6,9);
+    document.getElementById('stringmethod').innerHTML= type3;
+</script>
  
 
 
