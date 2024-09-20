@@ -239,17 +239,41 @@ document.getElementById('arraymethod').innerHTML= name[1];
     </script>
 
     <!-- string method -->
-<P id="stringmethod"></P>
+<P id="stringmethod1"></P>
 <script>
     var flowers ="Rose,jasmine,lilly";
-    var type3 = text.slice(6,9);
-    document.getElementById('stringmethod').innerHTML= type3;
+    var typeslice = text.slice(4,12);
+    document.getElementById('stringmethod1').innerHTML= typeslice ;
 </script>
- 
 
 
+<!-- sep 20 task -->
+<p id="object1"></p>
+<script>
+    var employee = {
+        name : "Agalya",
+        std : "10th",
+        schoolName : "BRINDHAVAN HIGHER SECONDARY SCHOOL",
+        schoolAddress : "Pattukkottai",
+    }
+    document.getElementById('object1').innerHTML = employee.schoolName +" , " + employee.schoolAddress + ".";
+</script>
 
+<p id="arraymethod1">Array Method</p>
+<script>
+const persons = ["agalya","ruban","amsavarthani","bavya","nivetha"];
+document.getElementById('arraymethod1').innerHTML= persons[4];
+</script>
 
+<!-- uppercase -->
+  <p id="upper">Agalya</p>
+  <button onclick="uppercase()">try!</button>
+  <script>
+    function uppercase(){
+        var case1 = document.getElementById('upper').innerHTML;
+        document.getElementById('upper').innerHTML = case1.toUpperCase();
+    }
+  </script>
 
 </body>
 <script src="main.js"></script>
