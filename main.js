@@ -252,3 +252,6 @@ for(count=1;count<=20;count=count+1)
                  var name="i am bavya"
                 console.log(reversedName(name))
     
+                // split
+                var splitName = "Agalya is a good girl Ruban is a bad boy"
+                console.log (splitName.split(" "))
