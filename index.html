@@ -285,6 +285,83 @@ const person6= ["Bavya","21","cs","STET womens college","mannargudi."];
 document.getElementById('arraymethod2').innerHTML= [person4];
 </script>
 
+<!-- array sort -->
+ <p id="fruit1"></p>
+ <p id="fruit2"></p>
+ <script>
+    var fruitsname = ["Apple","kiwi","orange","banana","strawberry","graphs"]
+    document.getElementById('fruit1').innerHTML = fruitsname;
+
+    fruitsname.sort();
+    document.getElementById('fruit2').innerHTML = fruitsname;
+
+ </script>
+
+ <!-- reverse -->
+ <p id="fruit3"></p>
+ <p id="fruit4"></p>
+ <script>
+    var fruitsname1 = ["Apple","kiwi","orange","banana","strawberry","graphs"]
+    document.getElementById('fruit3').innerHTML = fruitsname1;
+
+    fruitsname1.reverse();
+    document.getElementById('fruit4').innerHTML = fruitsname1;
+
+ </script>
+ 
+<!-- number sort -->
+<p id="number1"></p>
+<p id="number2"></p>
+<script>
+   var Numbers = ["123","57","25","67","15","5"]
+   document.getElementById('number1').innerHTML = Numbers;
+
+   Numbers.sort( function(a,b) {return a-b});
+   document.getElementById('number2').innerHTML = Numbers;
+
+</script>
+
+<button onclick="button1()">Alphabetical</button>
+<button onclick="button2()">Numerical</button>
+<p id="typetwo"></p>
+<script>
+    var twoNumbers  = ["123","57","25","67","15","5"]
+    document.getElementById('typetwo').innerHTML = Numbers;
+
+    function button1(){
+        twoNumbers .sort();
+        document.getElementById('typetwo').innerHTML =  twoNumbers ;
+    }
+    function button2(){
+        twoNumbers .sort( function(a,b) {return a-b});
+        document.getElementById('typetwo').innerHTML =  twoNumbers ;
+    }
+
+</script>
+
+<!-- indexof -->
+<p id="fruit5"></p>
+ <script>
+    var fruitsname2= ["Apple","kiwi","orange","banana"]
+    let position =  fruitsname2.indexOf("graphs")
+    document.getElementById('fruit5').innerHTML = position ;
+    </script>
+<!-- find method -->
+ 
+<p id="findMethod"></p>
+<script>
+    let numbers = [10,45,67,23,3,5,90];
+    let Value = numbers.find(functionName);
+    document.getElementById('findMethod').innerHTML = "First number over 5 is " + Value ;
+
+    function functionName(value){
+        return value > 5;
+
+    }
+</script>
+
 </body>
 <script src="main.js"></script>
 </html>
+
+
