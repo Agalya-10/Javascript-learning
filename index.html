@@ -360,6 +360,82 @@ document.getElementById('arraymethod2').innerHTML= [person4];
     }
 </script>
 
+<!-- array join -->
+
+<p id="join"></p>
+<script>
+    var fruitname = ["Apple","kiwi","orange","banana"]
+    document.getElementById('join').innerHTML = fruitname.join('***')
+
+</script>
+
+<!-- pop method -->
+<p id="pop"></p>
+<script>
+    var fruitname1 = ["Apple","kiwi","orange","banana"]
+    document.getElementById('pop').innerHTML = fruitname1.pop()
+
+</script>
+
+<!-- push method -->
+
+<p id="push"></p>
+<p id="push1"></p>
+
+<script>
+    var fruitname2 = ["Apple","kiwi","orange","banana"]
+    document.getElementById('push').innerHTML = fruitname2;
+    fruitname2.push("graps");
+    document.getElementById('push1').innerHTML = fruitname2;
+
+</script>
+
+<!-- shift method -->
+<p id="shift"></p>
+<p id="shift1"></p>
+
+<script>
+    var fruitname3 = ["Apple","kiwi","orange","banana"]
+    document.getElementById('shift').innerHTML = fruitname3;
+    fruitname3.shift();
+    document.getElementById('shift1').innerHTML = fruitname3;  
+</script>
+
+<!-- unshift method -->
+<p id="unshift"></p>
+<p id="unshift1"></p>
+
+<script>
+    var fruitname4 = ["Apple","kiwi","orange","banana"]
+    document.getElementById('unshift').innerHTML = fruitname4;
+    fruitname4.unshift("gova");
+    document.getElementById('unshift1').innerHTML = fruitname4;  
+</script>
+
+<!-- concat -->
+ <p id="concat"></p>
+ <script>
+    var girlsName = ["Agalya,Amsavarthani,Bavya"]
+    var boysName = ["Ruban,Hari,samar"]
+    const myChildren = girlsName.concat( boysName);
+    document.getElementById('concat').innerHTML = myChildren;
+ </script>
+
+<!-- copywithin -->
+<p id="copy"></p>
+<script>
+    var copyWith = ["Agalya","sowmiya","keerthi","nila","tamil","rathika"]
+    document.getElementById('copy').innerHTML = copyWith.copyWithin(2,0,2);
+</script>
+
+<!-- tospliced -->
+ <p id="splice"></p>
+ <script>
+    var months = ["jan","feb","mar","apr","may"]
+    var spliced = months.toSpliced(0,1);
+    document.getElementById('splice').innerHTML = spliced;
+ </script>
+
 </body>
 <script src="main.js"></script>
 </html>
