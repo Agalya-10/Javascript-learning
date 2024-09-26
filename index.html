@@ -436,6 +436,28 @@ document.getElementById('arraymethod2').innerHTML= [person4];
     document.getElementById('splice').innerHTML = spliced;
  </script>
 
+<!-- //  filter method -->
+ <p id="demo3"></p>
+
+<script>
+const number = [45, 4, 9, 16, 25];
+const over18 = number.filter(myFunction);
+
+document.getElementById("demo3").innerHTML = over18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+<!-- array from -->
+
+<p id="from"></p>
+<script>
+    var myArr = Array.from ("AGALYA")
+    document.getElementById('from').innerHTML = myArr;
+</script>
+
 </body>
 <script src="main.js"></script>
 </html>
